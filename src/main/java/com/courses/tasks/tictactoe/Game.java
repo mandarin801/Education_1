@@ -17,6 +17,7 @@ public class Game {
         @Override
         public void run() {
             GameLogic gameLogic = new GameLogic();
+            gameLogic.setAiGameStrategy(new RandomAiGameStrategy());
 
             JFrame frame = new JFrame("Tic tac toe");
             frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
